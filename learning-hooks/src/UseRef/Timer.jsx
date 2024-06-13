@@ -28,16 +28,10 @@ const Timer = () => {
 
       <div className="flex flex-col gap-3">
         <button
-          onClick={startTimer}
+          onClick={seconds > 0 ? stopTimer : startTimer}
           className="bg-slate-50 text-blue-950 rounded-sm px-2 max-w-[35%]"
         >
-          {seconds > 0 ? "Continue" : "Start"}
-        </button>
-        <button
-          onClick={stopTimer}
-          className="max-w-[35%] bg-slate-50 text-blue-950 rounded-sm px-2"
-        >
-          Stop
+          {seconds > 0 ? "Stop" : "Start"}
         </button>
 
         <button

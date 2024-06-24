@@ -1,9 +1,10 @@
-import UseRef from "./UseRef/UseRef";
-
+// import UseRef from "./UseRef/UseRef";
+import CustomHook from "./CustomHook/CustomHook";
+// import UseCallback from "./UseCallBack/UseCallback";
 function App() {
   return (
-    <div className="font-sans bg-blue-950 text-white text-lg h-dvh p-2.5 flex flex-col gap-4">
-      <UseRef />
+    <div className="bg-[#252955] h-dvh p-6">
+      <CustomHook />
     </div>
   );
 }
